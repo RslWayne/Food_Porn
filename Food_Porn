@@ -1,0 +1,44 @@
+db_username = 'rslwayne69'
+db_password = 'rslwayne666'
+
+def auth(tries:int):
+    count = 0
+    while count < tries:
+        username = input('Введите пожалуйста username: ')
+        password = input('Введите пожалуйста password: ')
+        if db_username == username and db_password == password:
+            if  9 < len(username) < 30  and 8 < len(password) < 30 and not username.isdigit() and not username.isalpha():
+                print('Добро пожаловать!')
+                break
+            else:
+                print('1)Неправильная длина логина и пароля!\n'
+                      '2)Логин и пароль должен состоять только из букв и цифр!')
+        else:
+            print('Неправильный логин или пароль!')
+        count += 1
+auth(2)
+
+
+def TMT(money,price):
+    result = money - price
+    return result
+
+def food():
+    
+
+
+
+
+
+
+
+
+
+
+
+catalogue = {'hot-dog':50,'hamburger':120,'shaurma':150,'naggets':130,'piza':930,
+             'boso-lagman':250,'plov':190,'giro-lagman':240,'mantes':160,'rolls':600,
+             'garnir':100,'grechka':70,'pelmeni':130,'french meat':400,'fish':500,
+             't-bone':870,'Beijing duck':5000,'shashlyk assorti':50000}
+
+
